@@ -1,0 +1,150 @@
+.list-with-icon{
+	li{
+		position: relative;
+		padding-left: 50px;
+	}
+	img{
+		position: absolute;
+		left: 0;
+	}
+	h5{
+		display: inline-block;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 28px;
+	}
+	p{
+		margin-top: 15px;
+	}
+}
+
+ul.with-images{
+	li{
+		width: 50%;
+		display: inline-block;
+		float: left;
+		img{
+			width: 100%;
+			margin-bottom: -2px;
+		}
+		&:nth-child(2n+1){
+			clear: both;
+		}
+	}
+}
+
+ul.dotted{
+	li{
+		line-height: 32px;
+		&:before{
+			content:"";
+			display: inline-block;
+			position: relative;
+			top:-2px;
+			width: 5px;
+			height: 5px;
+			border-radius: 100%;
+			margin-right: 12px;
+			background-color: @active-color;
+		}
+	}
+	margin-bottom: 40px;
+}
+
+ul.big-titles{
+	li{
+		width: 50%;
+		display: inline-block;
+		float: left;
+		&:nth-child(2n+1){
+			clear: both;
+		}
+		&:nth-child(odd){
+			padding-right: 20px;
+		}
+
+		&:nth-child(even){
+			padding-left: 20px;
+		}
+		h5{
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 26px;
+			color: #4a4a4a;
+			margin-bottom: 15px;
+			position: relative;
+			padding-left: 30px;
+			&:before{
+				content:"";
+				width: 14px;
+				height: 2px;
+				background-color: @active-color;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -2px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:1200px) and (max-width:1399px){
+	ul.with-images{
+		li{
+			width: 33.33%;
+			&:nth-child(2n+1){
+				clear: none;
+			}
+			&:nth-child(3n+1){
+				clear: both;
+			}
+			&:last-child{
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:1200px){
+	.icon-box-bordered{
+		li{
+			width: 100%;
+			border-right: none !important;
+			border-bottom: 1px solid #efefef;
+		}
+	}
+	ul.big-titles li h5{
+		font-size: 17px;
+	}
+}
+
+@media only screen and (max-width:1024px){
+	.icon-box-bordered li{
+		height: 260px;
+	}
+}
+
+@media only screen and (max-width:992px){
+	.icon-box-bordered li{
+		height: 220px;
+		img{
+			top: 0;
+		}
+	}
+}
+
+@media only screen and (max-width:480px){
+	section .chees-block .list-with-icon{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	ul.big-titles li{
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin-bottom: 30px;
+		p{
+			margin-bottom: 0;
+		}
+	}
+}

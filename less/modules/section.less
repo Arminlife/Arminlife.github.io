@@ -1,0 +1,129 @@
+section{
+	padding-top: 7vw;
+	display: inline-block;
+	width: 100%;
+	float: left;
+	&.full-width{
+		h6{
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 40px;
+			margin-bottom: 5px;
+		}
+	}
+	&.dark-section{
+		padding-top: 0;
+		background-color: #292929;
+		color: rgba(255, 255, 255, 0.6);
+		h5,h6{
+			color: #fff;
+		}
+		.list-with-icon{
+			li{
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				margin-bottom: 25px;
+				&:last-child{
+					border-bottom: none;
+					margin-bottom: 0;
+					p{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.f-column{
+		padding: 3.3vw;
+		p{
+			margin-bottom: 25px;
+		}
+	}
+	.chees-block{
+		padding: 0;
+		position: relative;
+		h3{
+			color: #4a4a4a;
+			font-size: 30px;
+			font-weight: 800;
+			line-height: 32px;
+			margin-bottom: 20px;
+		}
+		p{
+			line-height: 26px;
+			margin-bottom: 50px;
+		}
+		.list-with-icon{
+			width: 50%;
+			display: inline-block;
+			float: left;
+			vertical-align: top;
+			margin-bottom: 30px;
+			li{
+				margin-bottom: 45px;
+				padding-left: 55px;
+				img{
+					top: -5px;
+				}
+			}
+		}
+	}
+	&#most-interesting{
+		background-image: url(../images/image-interesting.jpg);
+		background-size: cover;
+		background-position: center center;
+		padding-bottom: 7vw;
+	}
+	.our-projects-bg{
+		background-image: url(../images/image-bg-project.jpg);
+		background-size: cover;
+	}
+}
+
+@media only screen and (min-width:1400px){
+	.block-right-align{
+		float: right;
+		width: 85%;
+		padding-right: 75px;
+	}
+	.block-left-align{
+		float: left;
+		width: 85%;
+		padding-left: 75px;
+	}
+}
+
+@media only screen and (max-width:1399px){
+	.block-left-align,
+	.block-right-align{
+		width: 100%;
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	section .f-column{
+		padding: 55px;
+		p{
+			margin-bottom: 20px;
+		}
+	}
+	.list-with-icon li{
+		margin-bottom: 20px;
+		p{
+			margin-top: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width:992px){
+	section .our-projects-bg{
+		display: block;
+		padding: 50px 0;
+	}
+}
+
+@media only screen and (max-width:480px){
+	section{
+		padding-top: 12vw;
+	}
+}
